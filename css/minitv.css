@@ -1,0 +1,51 @@
+body{
+margin: 0px;
+background-color: #070d0e;
+}
+
+
+.nav-bar{
+    background-color: rgb(26 34 36);;
+    height: 80px;
+}
+
+.navbar-logo{
+    margin-left: 40px;
+     
+}
+
+.banner{
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+}
+
+.row{
+    color: #fff;
+    margin-left: 30px;
+}
+.row-poster{
+    height: 150px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.row-posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 10px;
+}
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+.row-poster:hover{
+    transform: scale(1.10);
+}
+
+.row-poster-large:hover{
+    transform: scale(1.12);
+}
