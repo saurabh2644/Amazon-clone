@@ -4,8 +4,845 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color:#e3e6e6;
+        }
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 450px;
+            position: absolute;
+            top: 10px;
+            padding: 15px;
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 600px;
+            margin: 20px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:500px ;
+            position: absolute;
+            top: 20px;
+        }
+        .title:hover{
+            color: orange;
+        }
+        .heding-of-img{
+            background-image: url('./images/mani-img.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 900px;
+        }
+        .card-contner{
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: space-around;
+          
+        }
+        .car-1{
+            width: 320px;
+            height: 400px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 450px;
+        }
+        .card-img{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card-heding{
+            text-align: center;
+            font-size: 30px;
+            font-family: Georgia;
+            font-weight: normal;
+        }
+        .img-card{
+            height: 75px;
+            margin: 10px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .img-card:hover{
+            height: 80px;
+        }
+        .card-titil{
+           margin-left: 30px;
+           margin-top: 0px;
+           font-family: cursive;
+        }
+        .card-2{
+            width: 320px;
+            height: 400px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+        }
+        .card2-img{
+            height: 210px; 
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .card2-img:hover{
+            height: 220px;
+        }
+        .blockbuster-dealsSee{
+           
+            width: 1300px;
+            height: 600px;
+            margin-top: 20px;
+            display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+        .deals-titil{
+          font-size: 25px;
+          font-family: Georgia;         
+          margin-left: 20px;
+          box-shadow: 1px 1px 2px 2px grey;
+          width: 240px;
+          padding: 5px 15px;
+          background-color: white;
+        }
+        .deals-titil:hover{
+            padding: 7px 20px;
+        }
+        .card-3{
+            width: 300px;
+            height: 430px;
+            background-color:white;
+            padding: 10px;
+           margin-top: 30px;
+           position: relative;  
+           margin: 20px;
+
+        }
+        .deals-img{
+            height: 280px;
+            margin-left: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 2px 2px gray;
+        }
+        .deals-img:hover{
+            height:295px ;
+        }
+        .card-offer{
+          background-color: #cc0c39;
+           padding: 5px 10px;
+           width: 60px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .card-offer-rs{
+           margin-left:40px ;
+           font-family: cursive;
+        }
+        .earbuds-titil{
+            width: 1300px;
+            height: 300px;
+            margin-top: 20px;
+            display: flex;
+          flex-wrap: wrap;
+          margin-left: 20px;
+        }
+        .earbuds-name{
+            font-size: 25px;
+          font-family: Georgia;         
+          margin-left: 20px;
+          margin-top: 20px;
+          background-color: white;
+          width: 610px;
+          padding: 5px 20px;
+          box-shadow: 1px 1px 2px 2px gray;
+        }
+        .earbuds-contner{
+            width: 200px;
+            height: 200px;
+            background-color:white;
+            padding: 10px;
+           margin-top: 30px;
+           position: relative;  
+           box-shadow: 1px 1px 2px 2px gray;
+           margin: 20px;
+        }
+        .earbuds-contner:hover{
+            width: 210px;
+            height: 210px;
+            margin: 10px;
+        }
+        .car-2{
+            width: 320px;
+            height: 400px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 50px;
+        }
+        .top-deals{
+            font-size: 25px;
+          font-family: Georgia;         
+          margin-top: 40px;
+          background-color: white;
+          width: 370px;
+          padding: 5px 20px;
+          box-shadow: 1px 1px 2px 2px gray;
+        }
+        .car-5{
+            width: 320px;
+            height: 400px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 50px;
+        }
+      .card-titil-1{
+        margin-left: 30px;
+           margin-top: 0px;
+           font-family: cursive;
+           font-size: 12px;
+      }
+      .icon-1{
+        margin-left: 100px;
+      }
+      .fouter{
+        height: 350px;
+        width: 1300px;
+        background-color: #232f3e;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+     .card-7{
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+          
+     }
+       .fouter-img{
+        height: 100px;
+        margin-left:550px;
+        
+       }
+       .fouter-name-1{
+        font-family: Georgia;
+      margin-left: 40px;
+      color: whitesmoke;
+      font-size: 20px;
+       }
+       .fouter-name{
+        font-family: Georgia; 
+        text-align: center;
+        color: white;
+        cursor: pointer;
+       } 
+       .fouter-name:hover{
+       color: #ff9500;
+       }
+       .icon-font{
+        margin: 30px;
+        margin-left: 30px;
+        font-size: 30px;
+       }
+       .icon-font:hover{
+         font-size: 35px;
+         transition: 1.s;
+       }
+       .gmail{
+        text-decoration: none;
+        color: antiquewhite;
+       }
+       .img-h:hover{
+         height: 310px;
+       }
+    </style>
 </head>
 <body>
+    <div class="main-nav-bar" id="p1">
+  <img src="./images/amazon-titil.png" class="amazon-img"/>
+ 
+  <input type="text" placeholder=" Search Amazon.in" class="search-bar"/>
+
+   <span class="nav-bar-titil">
+    <span class="title"> Amazon MiniTV</span>
+    <span class="title"> Mobiles</span>
+    <span class="title"> Todat's Deals</span>
+    <span class="title"> Costomer Service</span>
+    <span class="title"> Electronice</span>
+   </span>
     
+    </div>
+
+
+<div class="heding-of-img">
+
+    <div class="card-contner">
+
+        <div class="car-1">
+
+             <h1 class="card-heding">Up to 70% off| Deals on 
+                Amazon BrandS & more
+             </h1>
+
+             <div class="card-img">
+              <span>
+            <img src="./images/kitchen.jpg"  class="img-card"/>
+            <p class="card-titil">Starting ₹139</p>
+        </span>
+        <span>
+            <img src="./images/lighting.jpg" class="img-card" />  
+            <p class="card-titil">Up to 65% off </p>
+        </span>
+        <span>
+            <img src="./images/toys.jpg" class="img-card" />
+            <p class="card-titil">Starting ₹85</p>
+        </span>
+        <span>
+            <img src="./images/collections.jpg" class="img-card" />
+            <p class="card-titil">Min. 60% off </p>
+        </span>
+
+             </div>
+
+        </div>
+
+        <div class="car-1">
+
+            <h1 class="card-heding">Starting ₹199 | Shoes & handbags
+            </h1>
+
+            <div class="card-img">
+             <span>
+           <img src="./images/sports-shoes.jpeg"  class="img-card"/>
+           <p class="card-titil">Sports Shoes</p>
+       </span>
+       <span>
+           <img src="./images/men-shoes.jpg" class="img-card" />  
+           <p class="card-titil">Men Shoes</p>
+       </span>
+       <span>
+           <img src="./images/women-shoes.jpg" class="img-card" />
+           <p class="card-titil">Women Shoes</p>
+       </span>
+       <span>
+           <img src="./images/handbags.jpeg" class="img-card" />
+           <p class="card-titil">Handbags </p>
+       </span>
+
+            </div>
+
+       </div>
+         
+
+       <div class="car-1">
+
+        <h1 class="card-heding">Deals on TVs to match every room size
+        </h1>
+
+        <div class="card-img">
+         <span>
+       <img src="./images/tv-32.jpg"  class="img-card"/>
+       <p class="card-titil">Up to 60% off</p>
+   </span>
+   <span>
+       <img src="./images/tv-43.jpg" class="img-card" />  
+       <p class="card-titil">Up to 12% Off </p>
+   </span>
+   <span>
+       <img src="./images/tv-55.jpg" class="img-card" />
+       <p class="card-titil">Starting ₹85000</p>
+   </span>
+   <span>
+       <img src="./images/tv-65.jpg" class="img-card" />
+       <p class="card-titil">Up to 60% off </p>
+       
+   </span>
+
+        </div>
+
+
+     
+
+ </div>
+
+ </div>
+ </div>
+
+
+ <div class="card-contner">
+
+    <div class="card-2">
+
+        <h1 class="card-heding">Up to 40% off | Deals on smartphones that suits</h1>
+         
+        <div class="card-img">
+            <span>
+          <img src="./images/mobile-1.jpg"  class="img-card"/>
+          <p class="card-titil"> Rs 10,000</p>
+      </span>
+      <span>
+          <img src="./images/mobile-2.jpg" class="img-card" />  
+          <p class="card-titil">Rs 25,000  </p>
+      </span>
+      <span>
+          <img src="./images/mobile-3.jpg" class="img-card" />
+          <p class="card-titil">Rs 40,000</p>
+      </span>
+      <span>
+          <img src="./images/mobile-4.jpg" class="img-card" />
+          <p class="card-titil">Rs 40,000 </p>
+      </span>
+   
+           </div>
+
+    </div>
+
+
+    <div class="card-2">
+
+        <h1 class="card-heding">Up to 80% off | Laptops, smartwatches..</h1>
+
+        <div>
+         <img src="./images/laptop.jpg" class="card2-img"/>
+         <p class="card-titil">Up to 60% off |  Laptops, smartwatches </p>
+        </div>
+
+    </div>
+
+
+    <div class="card-2">
+        <h1 class="card-heding">Starting ₹349 | Bestselling headphones</h1>
+          <img src="./images/headphones.jpg" class="card2-img"/>
+          <p class="card-titil"> Bestselling headphones</p>
+    </div>
+
+ </div>
+
+  <h1 class="deals-titil">Blockbuster Deals</h1>
+
+ 
+ <div class="blockbuster-dealsSee">
+
+
+    <div class="card-3">
+        <img src="./images/mobile-deals.jpg" class="deals-img"/>
+        <p class="card-offer">22% off</p> 
+        <span class="card-offer-rs">Rs 11,749.00 M.R.P Rs <del>14,999.00</del></span>
+        <span class="card-offer-rs" style="margin-left: 0px;">Realme Narzo 60x 5G || Sarting From..</span>
+
+    </div>
+
+    <div class="card-3">
+        <img src="./images/mobile-deals2.jpg" class="deals-img"/>
+        <p class="card-offer">33% off</p> 
+        <span class="card-offer-rs" style="margin-left: 0px;">Samsung Galaxy M14 | Starting from 10490 
+            Up to 33% off
+            Great Indian Festival
+            </span>
+
+    </div>
+
+
+    <div class="card-3">
+        <img src="./images/mobile-deals3.jpg" height="140px" style="margin-left: 10px;" class="deals-img"/>
+        <p class="card-offer">7% off</p> 
+        
+        <span class="card-offer-rs" style="margin-left: 0px;">Oneplus Open 5G (Emerald Dusk 16GB RAM, 512GB Storage)
+            Visit the OnePlus Store
+            </span>
+
+    </div>
+
+    <div class="card-3">
+        <img src="./images/mobile-deals4.jpg" class="deals-img"/>
+        <p class="card-offer">81% off</p> 
+        
+        <span class="card-offer-rs" style="margin-left: 0px;">Top Headsets from Oneplus, Samsung & More1
+            </span>
+
+    </div>
+
+    <div class="card-3">
+        <img src="./images/mobile-deals5jpg.jpg" height="140px" style="margin-left: 10px;" class="deals-img"/>
+        <p class="card-offer">7% off</p> 
+        
+        <span class="card-offer-rs" style="margin-left: 0px;">Beauty
+            Health & Personal Care
+            Baby
+            Appliances
+            Car & Motorbike
+            Electronics
+            </span>
+
+    </div>
+
+
+    <div class="card-3">
+        <img src="./images/mobile-deals7jpg.jpg"  style="margin-left: 0px;" class="deals-img"/>
+        <p class="card-offer">55% off</p> 
+        
+        <span class="card-offer-rs" style="margin-left: 0px;">Cycles
+            Accessories
+            Badminton
+            Baseball
+            Basketball
+            Cricket
+            Cycling
+            </span>
+
+    </div>
+
+ </div>
+
+ </div>
+       
+
+   <div style="margin-top: 400px;">
+    <img src="./images/back-img.jpg" height="300px" width="1300px"/>
+
+    </div>
+     
+    <div class="earbuds-name">
+        Starting 399 | Neckbands & Earbuds | Amazon Brands 
+    </div>
+
+
+    <div class="earbuds-titil">
+       
+
+        <div class="earbuds-contner">
+            <img src="./images/earbase.jpg" class="earbuds-img"/>
+        </div>
+
+        <div class="earbuds-contner">
+            <img src="./images/earbase6.jpg" class="earbuds-img"/>
+        </div>
+
+        <div class="earbuds-contner">
+            <img src="./images/earbase2.jpg" class="earbuds-img"/>
+        </div>
+        <div class="earbuds-contner">
+            <img src="./images/earbase5.jpg" class="earbuds-img"/>
+        </div>
+        <div class="earbuds-contner">
+            <img src="./images/earbase7.jpg" class="earbuds-img"/>
+        </div>
+      
+
+
+    </div>
+   
+
+    <div style="margin-top: 20px;">
+        <img src="./images/back2-img.jpg" height="300px" width="1300px"/>
+    
+        </div>
+
+        <div class="card-contner">
+
+            <div class="car-2">
+    
+                 <h1 class="card-heding">Starting ₹199 | Shoes, jewellery & more
+                 </h1>
+    
+                 <div class="card-img">
+                  <span>
+                <img src="./images/home1.jpg"  class="img-card"/>
+                <p class="card-titil">JEWELLERY</p>
+            </span>
+            <span>
+                <img src="./images/home2.jpg" class="img-card" />  
+                <p class="card-titil">smartwatches </p>
+            </span>
+            <span>
+                <img src="./images/home3.jpg" class="img-card" />
+                <p class="card-titil">
+                    wallets & luggage
+                   </p>
+            </span>
+            <span>
+                <img src="./images/home4.jpeg" class="img-card" />
+                <p class="card-titil">Sports Shoes </p>
+            </span>
+    
+                 </div>
+    
+            </div>
+    
+            <div class="car-2">
+    
+                <h1 class="card-heding">Up to 70% off | Amazon Renewed
+                </h1>
+    
+                <div class="card-img">
+               <img src="./images/toy.jpg" class="card2-img"/>
+    
+                </div>
+    
+           </div>
+             
+    
+           <div class="car-2">
+    
+            <h1 class="card-heding">Great Indian Festival | Brands in focus
+            </h1>
+    
+            <div class="card-img">
+             <span>
+           <img src="./images/brand1.jpg"  class="img-card"/>
+           <p class="card-titil">Up to 40% off</p>
+       </span>
+       <span>
+           <img src="./images/brand2.jpg" class="img-card" />  
+           <p class="card-titil">Up to 32% Off </p>
+       </span>
+       <span>
+           <img src="./images/brand3.jpg" class="img-card" />
+           <p class="card-titil">Starting ₹5000</p>
+       </span>
+       <span>
+           <img src="./images/brand4.jpg" class="img-card" />
+           <p class="card-titil">Up to 60% off </p>
+           
+       </span>
+    
+            </div>
+    
+    
+         
+    
+     </div>
+
+
+     <h1 class="top-deals">Shop deals in top categories</h1>
+
+       
+     <div class="card-contner">
+
+        <div class="car-2" style="height: 350px;">
+
+            <img src="./images/phone-1.jpg" class="img-h" height="300px" style="margin-top: 20px;"/>
+
+        </div>
+
+        <div class="car-2" style="height: 350px;">
+
+            <img src="./images/phone-2.jpg " class="img-h" height="300px" style="margin-top: 20px;"/>
+
+
+       </div>
+         
+
+       <div class="car-2" style="height: 350px;">
+
+        <img src="./images/phone-3.jpg" class="img-h" height="300px" style="margin-top: 20px;"/>
+
+       </div>
+
+ </div>
+
+ <h1 class="top-deals" style="width: 450px;">Inspired by your browsing history</h1>
+
+ <div class="card-contner">
+
+    <div class="car-2" style="height: 400px;">
+
+        <img src="./images/last1.jpg" height="200px" style="margin-top: 20px;margin-left: 60px;"/>
+        <p class="card-titil-1">ZORBES® Wall Adapter Holder for Alexa Echo Dot 4th Generation,A Space-Saving Solution with Cord Management for Your Smart Hom
+            ZORBES® Wall Adapter Holder for Alexa Echo Dot 4th Generation,A Space-Saving Solution</p>
+            <div class="icon-1">
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+           </div>
+           <p>
+            Great Indian Festival
+            ₹894.00
+            M.R.P: ₹1,052.00
+            Get it by Saturday, November 4
+            FREE Delivery by Amazon
+            </p>
+
+       </div>
+    
+ 
+
+       <div class="car-2" style="height: 400px;">
+
+        <img src="./images/last2.jpg" height="200px" style="margin-top: 20px;margin-left: 60px;"/>
+        <p class="card-titil-1">Acer HA270 27 Inch (68.58 Cm) 1920 X 1080 Pixels, Full HD IPS LCD Monitor with LED Back Light Technology I Ultra Slim, 6.6mm 
+            Acer HA270 27 Inch (68.58 Cm) 1920 X 1080 Pixels, Full HD IPS LCD Monitor with LED Back</p>
+            <div class="icon-1">
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+           </div>
+           <p>
+           
+            Great Indian Festival
+            ₹9,999.00
+            M.R.P: ₹21,900.00
+            Get it by Tuesday, October 31
+            </p>
+
+       </div>
+    
+       <div class="car-2" style="height: 400px;">
+
+        <img src="./images/last3.jpg" height="200px" style="margin-top: 20px;margin-left: 60px;"/>
+        <p class="card-titil-1">Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with Amazon Alexa and Google Assistant (16M Colours, W
+            Wipro 9W B22D WiFi LED Smart Bulb with Music Sync Function, Compatible with</p>
+            <div class="icon-1">
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+            <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+           </div>
+           <p>
+          
+            Great Indian Festival
+            ₹549.00
+            M.R.P: ₹2,099.00
+            Get it by Tuesday, October 31
+            </p>
+
+       </div>
+    
+</div>
+
+
+
+   
+<div class="fouter">
+    
+
+    <div class="card-7">
+
+        <h1 class="fouter-name-1"> Company</h1>
+
+
+         <p class="fouter-name">
+            About Us
+           </p>
+           <p class="fouter-name">
+          Our Serivces
+           </p>
+           <p class="fouter-name"> 
+            Privocy Poilcy 
+           
+           </p>
+           <p class="fouter-name">
+           
+            Amazon Science
+            
+           </p>
+          
+    </div>
+
+
+    <div class="card-7">
+
+        <h1 class="fouter-name-1">Get Help </h1>
+
+         <p class="fouter-name">
+            FAQ
+           </p>
+           <p class="fouter-name">
+         
+           </p>
+           <p class="fouter-name"> 
+           Shipping
+           
+           </p>
+           <p class="fouter-name">
+           
+           Returne
+            
+           </p>
+
+           <p class="fouter-name">
+           
+            Order Status
+             
+            </p>
+            <p class="fouter-name">
+           
+                Payment Options
+                 
+                </p>
+          
+    </div>
+
+    <div class="card-7">
+
+        <h1 class="fouter-name-1">Online Shop </h1>
+
+         <p class="fouter-name">
+            Watch
+           </p>
+           <p class="fouter-name">
+         
+           </p>
+           <p class="fouter-name"> 
+            Bag
+           
+           </p>
+           <p class="fouter-name">
+           
+            Shoes
+            
+           </p>
+           <p class="fouter-name">
+           
+            Dress
+            
+           </p>
+          
+    </div>
+
+    <div class="card-7">
+
+        <h1 class="fouter-name-1">Connect Us</h1>
+
+
+        <i class="fa-brands fa-instagram icon-font" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-whatsapp icon-font" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook icon-font" style="color: #ffffff;"></i>
+        <i class="fa-regular fa-envelope-open icon-font" style="color: #f0f0f0;"></i>
+          
+    </div>
+
+</div>
+
+
+      
+
+  
+
+   
+
+  <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
 </body>
-</html>
