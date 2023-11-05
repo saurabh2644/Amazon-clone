@@ -1,0 +1,131 @@
+body{
+    margin: 0%;
+    background-color: #070d0e;
+    }
+    
+    
+    .nav-bar{
+        background-color: rgb(26 34 36);
+    }
+    
+    .navbar-logo{
+        margin-left: 60px;
+        margin-top: 22px;
+    }
+    
+    .nav-div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    }
+    
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+    
+    li a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 75px;
+    }
+    
+    .menu-container{
+        margin-right: 350px;
+    }
+    
+    li a:hover{
+        color: rgb(198 22 100);
+        
+    }
+    .banner{
+        color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 320px;
+    }
+    
+    .heading{
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+     
+    .web-effect{
+        cursor: pointer;
+        color: rgb(198 22 100);
+    }
+    
+    
+    .row{
+        color: #fff;
+        margin-left: 30px;
+    }
+    .row-poster{
+        height: 150px;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .row-posters{
+        display: flex;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        padding: 10px;
+    }
+    .row-posters::-webkit-scrollbar{
+        display: none;
+    }
+    .row-poster:hover{
+        transform: scale(1.10);
+    }
+    
+    .row-poster-large:hover{
+        transform: scale(1.12);
+    }
+   
+    .footer{
+        margin-top: 30px;
+        background-color: #0f1516;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .footer-row{
+        margin-top: 30px;
+        margin-left:40px;
+    }
+    
+    .dailogoue{
+        margin-top: 5px;
+    }
+    .cards{
+        height: 50px;
+    }
+    
+    .qrcode{
+        height: 100px;
+    }
+    
+    .footer-name{
+        color: #fff;
+        font-size: 30px;
+        margin-top: 0%;
+    }
+    
+    .icon-font{
+        margin: 5px;
+        font-size: 22px;
+    }
+    
+    .icon-font:hover{
+        font-size: 27px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    
