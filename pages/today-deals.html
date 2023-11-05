@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Today Deals</title>
+    <style>
+         body{
+            margin: 0px;
+            padding: 0px;
+            background-color:#e3e6e6;
+        }
+        .nav-bar-img{
+            background-image: url('./../images/today-deals.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 250px;
+        }
+        .nav-bar-img-2{
+            background-image: url('./../images/today-deals-2.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 100px;
+        }
+
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 450px;
+            position: absolute;
+            top: 10px;
+            padding: 15px;
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 600px;
+            margin: 20px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:500px ;
+            position: absolute;
+            top: 20px;
+        }
+        .title:hover{
+            color: orange;
+        }
+        .hading-1{
+            font-size: 25px;
+          font-family: Georgia;         
+          margin-left: 20px;
+          box-shadow: 1px 1px 2px 2px grey;
+          width: 390px;
+          padding: 5px 15px;
+          background-color: white; 
+        }
+        .contner-of-all-card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .card-of-today-deasle{
+            width: 220px;
+            height: 280px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 30px;
+            border-bottom:2px orange solid ;
+        }
+        .deals-for-img{
+            height:125px ;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .deals-for-img-2{
+            height:125px ;
+            padding: 10px;
+            cursor: pointer;
+            margin-left: 50px;
+        }
+        .deals-for-img-2:hover{
+            height: 130px;
+        }
+        .deals-for-img:hover{
+            height: 130px;
+        }
+        .offer-butan{
+            background-color: #cc0c39;
+            width: 100px;
+            padding:5px 9px ;
+        }
+        .offers-titil{
+            font-family: cursive;
+        }
+        .card-of-today-deasle-offer{
+            width: 260px;
+            height: 350px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 30px;
+            border-bottom:2px orange solid ;
+        }
+        .big-offer-img{
+            margin-left: 40px;
+            height: 200px;
+            cursor: pointer;
+        }
+        .big-offer-img:hover{
+           height: 210px;
+        }
+        .big-offer-img-1{
+            height: 170px;
+        }
+        .hading-2{
+            font-size: 25px;
+          font-family: Georgia;         
+          margin-left: 20px;
+          box-shadow: 1px 1px 2px 2px grey;
+          width: 330px;
+          padding: 5px 15px;
+          background-color: white; 
+        }
+        .fouter{
+        height: 300px;
+        width: 1300px;
+        background-color: #232f3e;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+     .card-7{
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+          
+     }
+       .fouter-img{
+        height: 100px;
+        margin-left:550px;
+        
+       }
+       .fouter-name-1{
+        font-family: Georgia;
+      margin-left: 40px;
+      color: whitesmoke;
+      font-size: 20px;
+       }
+       .fouter-name{
+        font-family: Georgia; 
+        text-align: center;
+        color: white;
+        cursor: pointer;
+       } 
+       .fouter-name:hover{
+       color: #ff9500;
+       }
+       .icon-font{
+        margin: 30px;
+        margin-left: 30px;
+        font-size: 30px;
+       }
+       .icon-font:hover{
+         font-size: 35px;
+         transition: 1.s;
+       }
+       .gmail{
+        text-decoration: none;
+        color: antiquewhite;
+       }
+       .img-h:hover{
+         height: 310px;
+       }
+       @media only screen and (max-width: 600px){
+        .nav-bar-img{
+            background-image: url('./../images/today-deals.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 100px;
+        }
+        .nav-bar-img-2{
+            background-image: url('./../images/today-deals-2.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 50px;
+        }
+        .fouter{
+        height: 600px;
+       }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="main-nav-bar" id="p1">
+        <img src="./../images/amazon-titil.png" class="amazon-img"/>
+       
+        <input type="text" placeholder=" Search Amazon.in" class="search-bar"/>
+      
+         <span class="nav-bar-titil">
+          <span class="title"> Amazon MiniTV</span>
+          <span class="title"> Mobiles</span>
+          <span class="title"> Todat's Deals</span>
+          <span class="title"> Costomer Service</span>
+          <span class="title"> Electronice</span>
+         </span>
+          
+          </div>
+      
+    <div class="nav-bar-img">
+
+    </div>
+    <div class="nav-bar-img-2">
+    </div>
+
+    <h1 class="hading-1">Recommended deals for you</h1>
+
+    <div class="contner-of-all-card" >
+
+        <div class="card-of-today-deasle">
+
+            <img src="./../images/deals-fro-img-1.jpg" class="deals-for-img"/>
+            <p class="offer-butan">Up to 53% off</p>
+            <p class="offers-titil">Great Indian Festival
+                Budget Laptops Under INR 40000Budget </p>
+
+        </div>
+
+        <div class="card-of-today-deasle">
+
+            <img src="./../images/deals-fro-img-2.jpg" class="deals-for-img-2"/>
+            <p class="offer-butan">Deal of Day</p>
+            <p class="offers-titil">
+                OnePlus 11 5G | including additional offersOnePlus 11 5G | Starting from 49999/</p>
+
+        </div>
+
+        <div class="card-of-today-deasle">
+
+            <img src="./../images/deals-fro-img-3.jpg" class="deals-for-img-2"/>
+            <p class="offer-butan">Up to 86% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Festive Deals on Boult AudioFestive Deals on Boult Audio </p>
+
+        </div>
+
+        <div class="card-of-today-deasle">
+
+            <img src="./../images/deals-fro-img-4.jpg" class="deals-for-img-2"/>
+            <p class="offer-butan">Up to 77% off</p>
+            <p class="offers-titil">
+                Jaw dropping deals on Zebronics speakers & headphones
+               
+               </p>
+
+        </div>
+
+    </div>
+
+    <h1 class="hading-2">Today Top  Deals <Form:post></Form:post>or You</h1>
+
+    <div class="contner-of-all-card" >
+
+        <div class="card-of-today-deasle-offer">
+           <img src="./../images/big-offer-img.jpg" class="big-offer-img"/>
+           <p class="offer-butan">Up to 53% off</p>
+           <p class="offers-titil">
+            Great Indian Festival
+            Starting from 37999/- including additional offers<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-1.jpg" class="big-offer-img-1"/>
+            <p class="offer-butan">Up to 49% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Crackling deals with 4k TVs at lowest prices of the year<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-2.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 89% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Smartwatches from Rs.899 - Fire-boltt, Noise, Boat & More as<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-4.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 45% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+     Top Deals on Ref Upto 45% Off<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-5.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 83% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                All Clothing: Levi's, BIBA, U.S.POLO ASSN. and more<p>
+         </div>
+ 
+ 
+         <div class="card-of-today-deasle-offer">
+             <img src="./../images/big-offer-img-6.jpg" class="big-offer-img"/>
+             <p class="offer-butan">Up to 70% off</p>
+             <p class="offers-titil">
+                Great Indian Festival
+                Best Styles in Footwear & Handbags<p>
+         </div>
+ 
+ 
+         <div class="card-of-today-deasle-offer">
+             <img src="./../images/big-offer-img-7.jpg" class="big-offer-img"/>
+             <p class="offer-butan">Up to 29% off</p>
+             <p class="offers-titil">
+                Great Indian Festival
+iPhone 13 starting Rs. 48999 including additional offers<p>
+         </div>
+
+         <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-8.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 76% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                boAt Diwali Sale Headphones starting at 799<p>
+        </div>
+  
+
+          <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-9.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 80% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Top Offers of Gaming accessori<p>
+        </div>
+ 
+
+          <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-10.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 31% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 50i Prime || Starting from 6569<p>
+        </div>
+ 
+          <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-11.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 75% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Budget Backpack & Laptop Backpack starting from 499<p>
+        </div>
+ 
+          <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-12.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 76% off</p>
+            <p class="offers-titil">
+                All Clothing: NEWPORT, Puma, Van Heusen and more<p>
+        </div>
+ 
+ 
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-13.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Redmi 12 5G | Starting from 10800/- including additional offers<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-14.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 46% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Starting from 17999/- including additional offers<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-15.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 26% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+Realme Narzo 60x 5G || Starting from 10999<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-16.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 60 5G || Starting from 14999<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-17.jpg" class="big-offer-img-2"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 60 5G || Starting from 14999<p>
+        </div>
+
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-18.jpg" class="big-offer-img-2"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 60 5G || Starting from 14999<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-19.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 60 5G || Starting from 14999<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-20.jpg" class="big-offer-img-2"/>
+            <p class="offer-butan">Up to 25% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Realme Narzo 60 5G || Starting from 14999<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-21.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 42% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Top Loads Starting Rs.9,990<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-22.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 22% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Deals on Samsung Fold and Flip<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-23.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 36% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Single Door Refs Starting 7790<p>
+        </div>
+
+        <div class="card-of-today-deasle-offer">
+            <img src="./../images/big-offer-img-24.jpg" class="big-offer-img"/>
+            <p class="offer-butan">Up to 35% off</p>
+            <p class="offers-titil">
+                Great Indian Festival
+                Apple Watches starting at Rs 20249<p>
+        </div>
+
+     
+        <div class="fouter">
+    
+
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1"> Company</h1>
+        
+        
+                 <p class="fouter-name">
+                    About Us
+                   </p>
+                   <p class="fouter-name">
+                  Our Serivces
+                   </p>
+                   <p class="fouter-name"> 
+                    Privocy Poilcy 
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Amazon Science
+                    
+                   </p>
+                  
+            </div>
+        
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Get Help </h1>
+        
+                 <p class="fouter-name">
+                    FAQ
+                   </p>
+                   <p class="fouter-name">
+                 
+                   </p>
+                   <p class="fouter-name"> 
+                   Shipping
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                   Returne
+                    
+                   </p>
+        
+                   <p class="fouter-name">
+                   
+                    Order Status
+                     
+                    </p>
+                    <p class="fouter-name">
+                   
+                        Payment Options
+                         
+                        </p>
+                  
+            </div>
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Online Shop </h1>
+        
+                 <p class="fouter-name">
+                    Watch
+                   </p>
+                   <p class="fouter-name">
+                 
+                   </p>
+                   <p class="fouter-name"> 
+                    Bag
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Shoes
+                    
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Dress
+                    
+                   </p>
+                  
+            </div>
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Connect Us</h1>
+        
+        
+                <i class="fa-brands fa-instagram icon-font" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-whatsapp icon-font" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook icon-font" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-envelope-open icon-font" style="color: #f0f0f0;"></i>
+                  
+            </div>
+        
+        </div>
+ 
+ 
+       
+ 
+ 
+       
+ 
+ 
+       
+    </div>
+
+
+    
+
+    <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
