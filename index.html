@@ -61,6 +61,7 @@
             margin: 10px;
             position: relative;
             margin-top: 450px;
+            border-bottom:2px orange solid ;
         }
         .card-img{
             display: flex;
@@ -93,6 +94,7 @@
             padding: 10px;
             margin: 10px;
             position: relative;
+            border-bottom:2px orange solid ;
         }
         .card2-img{
             height: 210px; 
@@ -131,7 +133,7 @@
            margin-top: 30px;
            position: relative;  
            margin: 20px;
-
+           border-bottom:2px orange solid ;
         }
         .deals-img{
             height: 280px;
@@ -194,6 +196,7 @@
             margin: 10px;
             position: relative;
             margin-top: 50px;
+            border-bottom:2px orange solid ;
         }
         .top-deals{
             font-size: 25px;
@@ -212,6 +215,7 @@
             margin: 10px;
             position: relative;
             margin-top: 50px;
+            border-bottom:2px orange solid ;
         }
       .card-titil-1{
         margin-left: 30px;
@@ -223,7 +227,7 @@
         margin-left: 100px;
       }
       .fouter{
-        height: 350px;
+        height: 300px;
         width: 1300px;
         background-color: #232f3e;
         display: flex;
@@ -276,6 +280,51 @@
        .img-h:hover{
          height: 310px;
        }
+       @media only screen and (max-width: 600px){
+        .fouter{
+            height: 600px;
+        }
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+            height: 70px;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 120px;
+          
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 10px;
+            margin: 10px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:160px ;
+            position: absolute;
+            top: 6px;
+        }
+        .heding-of-img{
+            height: 450px;
+        }
+        .car-1{
+            width: 320px;
+            height: 400px;
+            background-color:white;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            margin-top: 150px;
+            border-bottom:2px orange solid ;
+        }
+       }
     </style>
 </head>
 <body>
@@ -285,11 +334,11 @@
   <input type="text" placeholder=" Search Amazon.in" class="search-bar"/>
 
    <span class="nav-bar-titil">
-    <span class="title"> Amazon MiniTV</span>
+   <a href="./pages/minitv.html"> <span class="title"> Amazon MiniTV</span></a>
     <span class="title"> Mobiles</span>
-    <span class="title"> Todat's Deals</span>
-    <span class="title"> Costomer Service</span>
-    <span class="title"> Electronice</span>
+  <a href="./pages/today-deals.html"><span class="title"> Todat's Deals</span></a>
+   <a href="./pages/costomer-s.html"> <span class="title"> Costomer Service</span></a>
+   <a href="./pages/electronice.html"> <span class="title"> Electronice</span></a>
    </span>
     
     </div>
@@ -736,7 +785,7 @@
 
 
    
-<div class="fouter">
+ <div class="fouter">
     
 
     <div class="card-7">

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Electronice</title>
+    <style>
+          body{
+            margin: 0px;
+            padding: 0px;
+            background-color:white;
+        }
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 450px;
+            position: absolute;
+            top: 10px;
+            padding: 15px;
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 600px;
+            margin: 40px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:500px ;
+            position: absolute;
+            top: 20px;
+        }
+        .title:hover{
+            color: orange;
+        }
+        .electronice-heding-img{
+            background-image: url('./../images/eletronice-heding-img.gif');
+            background-size:cover ;
+            background-position:center ;
+            height: 300px;
+        }
+        .electronice-heding-img-2{
+            background-image: url('./../images/today-deals-2.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 100px;
+        }
+        .electronice-heding-img-3{
+            background-image: url('./../images/eletronice-offer-card.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 350px;
+            margin-top:30px ;
+        }
+        .electronice-heding-img-4{
+            background-image: url('./../images/eletronice-offer-card-2.gif');
+            background-size:cover ;
+            background-position:center ;
+            height: 100px;
+            margin-top:30px ;
+        }
+
+
+        .electronice-card-contner{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .electronice-card-1{
+            width: 250px;
+            height: 250px;
+            margin-left: 30px;
+            margin-top: 30px;
+            background-color: white;
+            border-bottom: 3px orange solid;
+        }
+        .electronice-card-1-img{
+            height: 150px;
+            margin-left:50px ;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .electronice-card-1-img:hover{
+            height: 170px;
+        }
+        .electronice-card-1-title{
+            text-align: center;
+            font-family: Georgia; 
+            font-weight: normal;
+        }
+        .electronice-heding-title{
+            font-family: Georgia;
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+        .electronice-card-2{
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .electronice-card-2-img{
+            height: 350px;
+            cursor: pointer;
+        }
+        .electronice-card-2-img:hover{
+            height: 360px;
+        }
+        .electronice-card-3{
+            width: 300px;
+            height: 400px;
+            margin-top: 40px;
+            margin-left: 40px;
+            background-color:white;
+            border: 2px solid orange;
+            border-radius: 15px;
+        }
+        .eletronice-cad-1{
+            height: 200px;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .eletronice-cad-1:hover{
+            height: 210px;
+        }
+        .eletronice-cad-tilie{
+            text-align: center;
+            margin: 20px;
+            font-family: cursive;
+        }
+        .icon-2{
+            margin-left: 80px;
+           
+        }
+        .icon{
+         
+            font-size: 30px;
+        }
+        .eletronice-blockbuster-img{
+            height: 370px;
+            cursor: pointer;
+            margin: 30px;
+        }
+        .eletronice-blockbuster-img:hover{
+            height: 390px;
+        }
+        .eletronice-blockbuster-choice-img{
+            cursor: pointer;
+            height: 300px;
+          
+        }
+
+      .eletronice-blockbuster-choice-titli{
+        text-align: center;
+        font-family: Georgia; 
+            font-weight: normal;
+      }
+      .fouter{
+        height: 300px;
+        width: 1450px;
+        background-color: #232f3e;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+     .card-7{
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+          
+     }
+       .fouter-img{
+        height: 100px;
+        margin-left:550px;
+        
+       }
+       .fouter-name-1{
+        font-family: Georgia;
+      margin-left: 40px;
+      color: whitesmoke;
+      font-size: 20px;
+       }
+       .fouter-name{
+        font-family: Georgia; 
+        text-align: center;
+        color: white;
+        cursor: pointer;
+       } 
+       .fouter-name:hover{
+       color: #ff9500;
+       }
+       .icon-font{
+        margin: 30px;
+        margin-left: 30px;
+        font-size: 30px;
+       }
+       .icon-font:hover{
+         font-size: 35px;
+         transition: 1.s;
+       }
+       .gmail{
+        text-decoration: none;
+        color: antiquewhite;
+       }
+       .img-h:hover{
+         height: 310px;
+       }
+        @media only screen and (max-width: 600px){
+            .main-nav-bar{
+            background-color: black;
+            position: relative;
+            height: 70px;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 120px;
+          
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 10px;
+            margin: 20px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:160px ;
+            position: absolute;
+            top: 6px;
+        }
+        .fouter{
+            height: 600px;
+        width:600px;
+        }
+        .electronice-heding-img{
+            height: 100px;
+        }
+        .electronice-heding-img-2{
+            height: 50px;
+        }
+        .electronice-heding-img-3{
+            height: 130px;
+            margin-top:30px ;
+        }
+        .electronice-heding-img-4{
+            height: 50px;
+            margin-top:30px ;
+        }
+        }
+    </style>
+
+</head>
+<body>
+      <div class="main-nav-bar" id="p1">
+        <img src="./../images/amazon-titil.png" class="amazon-img"/>
+       
+        <input type="text" placeholder=" Search Amazon.in" class="search-bar"/>
+      
+         <span class="nav-bar-titil">
+        <a href="./../index.html">  <span class="title"> Home</span></a>
+          <span class="title"> Mobiles</span>
+         <a href="./today-deals.html"> <span class="title"> Todat's Deals</span></a>
+       <a href="./costomer-s.html">   <span class="title"> Costomer Service</span></a>
+         </span>
+          
+          </div>
+
+       <div class="electronice-heding-img">
+
+       </div>
+
+       <div class="electronice-heding-img-2">
+
+       </div>
+
+
+       <div class="electronice-card-contner">
+
+        <div class="electronice-card-1">
+       <img src="./../images/eletronice-offer-1.jpg" class="electronice-card-1-img"/>
+
+            <h1 class="electronice-card-1-title">Headphones </h1>
+        </div>
+
+
+    <div class="electronice-card-1">
+            <img src="./../images/eletronice-offer-2.jpg" class="electronice-card-1-img"/>
+     
+                 <h1 class="electronice-card-1-title">Smartwatches</h1>
+         </div>
+
+     <div class="electronice-card-1">
+                <img src="./../images/eletronice-offer-3.jpg" class="electronice-card-1-img"/>
+         
+                     <h1 class="electronice-card-1-title">Accessories </h1>
+             </div>
+
+
+      <div class="electronice-card-1">
+        <img src="./../images/eletronice-offer-4.jpg" class="electronice-card-1-img"/>
+             
+               <h1 class="electronice-card-1-title">Memory Card </h1>
+                 </div>
+
+
+      <div class="electronice-card-1">
+        <img src="./../images/eletronice-offer-5.jpg" class="electronice-card-1-img"/>
+                 
+          <h1 class="electronice-card-1-title">Speakers </h1>
+      </div>
+       </div>
+         
+       <h1 class="electronice-heding-title">Extra savings this festive season : Shop Now </h1>
+
+
+       <div class="electronice-card-contner">
+
+        <div class="electronice-card-2">
+
+            <img src="./../images/eletronice-offer-card-1.jpg" class="electronice-card-2-img" />
+
+        </div>
+
+
+
+        <div class="electronice-card-2">
+
+            <img src="./../images/eletronice-offer-card-2.jpg" class="electronice-card-2-img" />
+
+        </div>
+
+
+        <div class="electronice-card-2">
+
+            <img src="./../images/eletronice-offer-card-3.jpg" class="electronice-card-2-img" />
+
+        </div>
+
+
+        <div class="electronice-card-2">
+
+            <img src="./../images/eletronice-offer-card-4.jpg" class="electronice-card-2-img" />
+
+        </div>
+
+       </div>
+
+
+       <div class="electronice-card-contner">
+
+        <div class="electronice-card-3">
+          <img src="./../images/eletronice-cad-1-jpg.jpg" class="eletronice-cad-1"/>
+          <p class="eletronice-cad-tilie">boAt Airdopes Atom 81 TWS Earbuds with Upto 50H Playtime, Quad Mics ENx™
+            ₹999.00 ₹4,490.00</p>
+
+            <div class="icon-2">
+                <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+    
+            </div>
+           
+        </div>
+
+
+        <div class="electronice-card-3">
+            <img src="./../images/eletronice-cad-2-jpg.jpg" class="eletronice-cad-1"/>
+            <p class="eletronice-cad-tilie">boAt Airdopes 141 Bluetooth TWS Earbuds with 42H Playtime,Low Latency Mode for Gaming
+                ₹1,099.00 ₹4,490.00
+                </p>
+  
+              <div class="icon-2">
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+      
+              </div>
+        
+        </div>
+
+
+        <div class="electronice-card-3">
+            <img src="./../images/eletronice-cad-3-jpg.jpg" class="eletronice-cad-1"/>
+            <p class="eletronice-cad-tilie">boAt Airdopes Atom 81 True Wireless Earbuds with Upto 50H Playtime, Quad Mics ENx™ Tech, 
+                ₹999.00 ₹4,490.00
+                 
+                </p>
+  
+              <div class="icon-2">
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+      
+              </div>
+
+        </div>
+
+        <div class="electronice-card-3">
+            <img src="./../images/eletronice-cad-4-jpg.jpg" class="eletronice-cad-1"/>
+            <p class="eletronice-cad-tilie">boAt Airdopes 141 Bluetooth Truly Wireless in Ear Headphones with 45H Playtime,
+                ₹1,099.00 ₹4,49000
+                </p>
+  
+              <div class="icon-2">
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                  <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+      
+              </div>
+
+        </div>
+
+       </div>
+
+
+       <div class=" electronice-heding-img-3">
+
+       </div>
+
+       <h1 class="electronice-heding-title">Blockbuster Deals | Shop Now</h1>
+         
+       <div class="electronice-card-contner">
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-1-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-2-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-3-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-4-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-5-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-6-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-7-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-8-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+       </div>
+
+
+       <div class=" electronice-heding-img-4">
+
+       </div>
+
+       <div class="electronice-card-contner">
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-9-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-10-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-11-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+
+        <div>
+            <img src="./../images/eletronice-blockbuster-12-jpg.jpg" class="eletronice-blockbuster-img"/>
+        </div>
+       </div>
+
+
+       
+       <h1 class="electronice-heding-title">Buying guides to help you discover the right choice</h1>
+
+
+       <div class="electronice-card-contner">
+
+        <div>
+         
+          <img src="./../images/eletronice-blockbuster-choice-1-jpg.jpg" class="eletronice-blockbuster-choice-img"/>
+          <h1 class="eletronice-blockbuster-choice-titli">Laptops</h1>
+        </div>
+
+
+        <div>
+         
+            <img src="./../images/eletronice-blockbuster-choice-2-jpg.jpg" class="eletronice-blockbuster-choice-img"/>
+            <h1 class="eletronice-blockbuster-choice-titli">Headphones</h1>
+          </div>
+
+
+          <div>
+         
+            <img src="./../images/eletronice-blockbuster-choice-3-jpg.jpg" class="eletronice-blockbuster-choice-img"/>
+            <h1 class="eletronice-blockbuster-choice-titli">Smartwatches</h1>
+          </div>
+
+
+          <div>
+         
+            <img src="./../images/eletronice-blockbuster-choice-4-jpg.jpg" class="eletronice-blockbuster-choice-img"/>
+            <h1 class="eletronice-blockbuster-choice-titli">Cameras</h1>
+          </div>
+
+
+
+          <div>
+         
+            <img src="./../images/eletronice-blockbuster-choice-5-jpg.jpg" class="eletronice-blockbuster-choice-img"/>
+            <h1 class="eletronice-blockbuster-choice-titli">Printers</h1>
+          </div>
+
+
+
+       </div>
+
+
+       <div class="fouter">
+    
+
+        <div class="card-7">
+    
+            <h1 class="fouter-name-1"> Company</h1>
+    
+    
+             <p class="fouter-name">
+                About Us
+               </p>
+               <p class="fouter-name">
+              Our Serivces
+               </p>
+               <p class="fouter-name"> 
+                Privocy Poilcy 
+               
+               </p>
+               <p class="fouter-name">
+               
+                Amazon Science
+                
+               </p>
+              
+        </div>
+    
+    
+        <div class="card-7">
+    
+            <h1 class="fouter-name-1">Get Help </h1>
+    
+             <p class="fouter-name">
+                FAQ
+               </p>
+               <p class="fouter-name">
+             
+               </p>
+               <p class="fouter-name"> 
+               Shipping
+               
+               </p>
+               <p class="fouter-name">
+               
+               Returne
+                
+               </p>
+    
+               <p class="fouter-name">
+               
+                Order Status
+                 
+                </p>
+                <p class="fouter-name">
+               
+                    Payment Options
+                     
+                    </p>
+              
+        </div>
+    
+        <div class="card-7">
+    
+            <h1 class="fouter-name-1">Online Shop </h1>
+    
+             <p class="fouter-name">
+                Watch
+               </p>
+               <p class="fouter-name">
+             
+               </p>
+               <p class="fouter-name"> 
+                Bag
+               
+               </p>
+               <p class="fouter-name">
+               
+                Shoes
+                
+               </p>
+               <p class="fouter-name">
+               
+                Dress
+                
+               </p>
+              
+        </div>
+    
+        <div class="card-7">
+    
+            <h1 class="fouter-name-1">Connect Us</h1>
+    
+    
+            <i class="fa-brands fa-instagram icon-font" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-whatsapp icon-font" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook icon-font" style="color: #ffffff;"></i>
+            <i class="fa-regular fa-envelope-open icon-font" style="color: #f0f0f0;"></i>
+              
+        </div>
+    
+    </div>
+
+   
+</div>
+
+       <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
