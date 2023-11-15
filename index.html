@@ -242,7 +242,6 @@
             margin: 10px;
             margin-top: 10px;
             margin-left: 20px;
-          
      }
        .fouter-img{
         height: 100px;
@@ -265,11 +264,20 @@
        color: #ff9500;
        }
        .icon-font{
-        margin: 30px;
+        margin: 10px;
+        margin-left: 0px;
+        font-size: 30px;
+       }
+       .icon-font-2{
+        margin: 10px;
         margin-left: 30px;
         font-size: 30px;
        }
        .icon-font:hover{
+         font-size: 35px;
+         transition: 1.s;
+       }
+       .icon-font-2:hover{
          font-size: 35px;
          transition: 1.s;
        }
@@ -279,6 +287,15 @@
        }
        .img-h:hover{
          height: 310px;
+       }
+       .mail-inbox-app{
+        text-decoration: none;
+        color: #ffffff;
+        margin: 10px;
+        cursor: pointer;
+       }
+       .mail-inbox-app:hover{
+        color: #ff9500;
        }
        @media only screen and (max-width: 600px){
         .fouter{
@@ -324,6 +341,15 @@
             margin-top: 150px;
             border-bottom:2px orange solid ;
         }
+        .main-img-cad{
+            height: 100px;
+            width: 500px;
+        }
+        .earbuds-titil{
+            display: flex;
+            justify-content:space-around ;
+            flex-wrap: wrap;
+        }
        }
     </style>
 </head>
@@ -335,7 +361,7 @@
 
    <span class="nav-bar-titil">
    <a href="./pages/minitv.html"> <span class="title"> Amazon MiniTV</span></a>
-    <span class="title"> Mobiles</span>
+   <a href="./pages/mobile.html">  <span class="title"> Mobiles</span></a>
   <a href="./pages/today-deals.html"><span class="title"> Todat's Deals</span></a>
    <a href="./pages/costomer-s.html"> <span class="title"> Costomer Service</span></a>
    <a href="./pages/electronice.html"> <span class="title"> Electronice</span></a>
@@ -568,7 +594,7 @@
        
 
    <div style="margin-top: 400px;">
-    <img src="./images/back-img.jpg" height="300px" width="1300px"/>
+    <img src="./images/back-img.jpg" height="300px" width="1300px " class="main-img-cad"/>
 
     </div>
      
@@ -604,7 +630,7 @@
    
 
     <div style="margin-top: 20px;">
-        <img src="./images/back2-img.jpg" height="300px" width="1300px"/>
+        <img src="./images/back2-img.jpg" height="300px" width="1300px" class="main-img-cad"/>
     
         </div>
 
@@ -875,12 +901,18 @@
     <div class="card-7">
 
         <h1 class="fouter-name-1">Connect Us</h1>
+        <img src="./images/mail-inbox-app.png" height="28px">
+      
+          <a href="mailto:luxuryshowroom1246@email.com" class="mail-inbox-app">amazon@email.com</a>
+          <br/>
+          <i class="fa-solid fa-phone icon-font" style="color: #ffffff;"></i>
+          <a href="tel:+917972947944" class="mail-inbox-app">+917972947944</a>
 
 
-        <i class="fa-brands fa-instagram icon-font" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-whatsapp icon-font" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-facebook icon-font" style="color: #ffffff;"></i>
-        <i class="fa-regular fa-envelope-open icon-font" style="color: #f0f0f0;"></i>
+        <i class="fa-brands fa-whatsapp icon-font-2" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook icon-font-2" style="color: #ffffff;"></i>
+
+      
           
     </div>
 
