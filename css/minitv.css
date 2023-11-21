@@ -141,3 +141,66 @@ li a:hover{
     cursor: pointer;
     transition: 0.2s;
 }
+
+@media screen and (max-width: 600px) {
+
+    .navbar-logo{
+        height: 30px;
+       margin-left: 30px;
+       margin-top: 0px;
+        
+    }
+
+    li a{
+        
+        font-size: 18px;
+        background-color: #0f1516;
+        padding: 5px;
+        border: 2px solid black;
+        margin-right: 0%;
+       
+    }
+    
+
+    .banner{
+        color: white;
+        background-size:contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:150px;
+       
+    }
+
+    .footer{
+        height: 350px;
+    }
+
+    .footer-logo{
+        height:30px ;
+        margin-left: 70px;
+    }
+   
+    .dailogoue{
+        height: 15px;
+        margin-top: 0%;
+        margin-left: 20px;
+    }
+
+    .cards{
+        height: 40px;
+        margin-left: 20px;
+    }
+    
+    .qrcode{
+        height: 70px;
+       
+    }
+
+    .footer-name{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+   
+
+}
