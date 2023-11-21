@@ -5,6 +5,9 @@ background-color: #070d0e;
 
 
 .nav-bar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     background-color: rgb(26 34 36);
 }
 
@@ -13,29 +16,24 @@ background-color: #070d0e;
     margin-top: 22px;
 }
 
-.nav-div{
-display: flex;
-justify-content:space-between;
-align-items: center;
+.nav-menu{
+    margin-left: 150px;
+    margin-top: 20px;
 }
 
-li{
-    list-style: none;
-    display: inline-block;
-}
-
-li a{
+.content{
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
-    margin-right: 75px;
+    margin-right:50px ;
+
 }
 
 .menu-container{
     margin-right: 350px;
 }
 
-li a:hover{
+.content:hover{
     color: rgb(198 22 100);
     
 }
@@ -57,20 +55,6 @@ li a:hover{
     color: rgb(198 22 100);
 }
 
-.web-effect{
-    cursor: pointer;
-    color: rgb(198 22 100);
-}
-
-.comedy-effect{
-    cursor: pointer;
-    color: rgb(198 22 100);
-}
-
-.movies{
-    cursor: pointer;
-    color: rgb(198 22 100);
-}
 
 .row{
     color: #fff;
@@ -96,9 +80,6 @@ li a:hover{
     transform: scale(1.10);
 }
 
-.row-poster-large:hover{
-    transform: scale(1.12);
-}
 
 .footer{
     margin-top: 30px;
@@ -144,32 +125,46 @@ li a:hover{
 
 @media screen and (max-width: 600px) {
 
+   
+    
     .navbar-logo{
-        height: 30px;
-       margin-left: 30px;
-       margin-top: 0px;
-        
-    }
-
-    li a{
-        
-        font-size: 18px;
-        background-color: #0f1516;
-        padding: 5px;
-        border: 2px solid black;
-        margin-right: 0%;
-       
+        margin-left:50px;
+        margin-top: 2px;
     }
     
-
-    .banner{
-        color: white;
-        background-size:contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        height:150px;
+    .nav-menu{
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .content{
+        font-size: 18px;
+        margin-right:14px ;
        
     }
+
+   
+    .banner{
+        color: white;
+        background-size:cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        height:140px;
+       
+    }
+
+    .row{
+        color: #fff;
+        margin-left: 20px;
+    }
+    .row-poster{
+        height: 100px;
+        margin-right: 5px;
+     
+    }
+    
+  
 
     .footer{
         height: 350px;
@@ -187,8 +182,9 @@ li a:hover{
     }
 
     .cards{
+        display: flex;
         height: 40px;
-        margin-left: 20px;
+        margin-left: 10px;
     }
     
     .qrcode{
