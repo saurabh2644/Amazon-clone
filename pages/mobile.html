@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Moblie</title>
+    <style>
+              body{
+            margin: 0px;
+            padding: 0px;
+            background-color:white;
+        }
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 450px;
+            position: absolute;
+            top: 10px;
+            padding: 15px;
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 600px;
+            margin: 20px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:500px ;
+            position: absolute;
+            top: 20px;
+        }
+        .title:hover{
+            color: orange;
+        }
+        .mobile-page-main-img{
+            height: 212px;
+        }
+        .mobile-page-conter{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+       .mobile-page-card-img{
+        height: 300px;
+        margin: 20px;
+        cursor: pointer;
+       }
+       .mobile-page-card-img:hover{
+        height: 310px;
+       }
+       .mobile-page-titile{
+        font-size: 25px;
+          font-family: Georgia;         
+          margin-left: 20px;
+          box-shadow: 1px 1px 2px 2px grey;
+          width: 450px;
+          padding: 5px 15px;
+          background-color: white;
+       }
+       .mobile-page-card2-img{
+        height: 290px;
+        cursor: pointer;
+       }
+       .mobile-page-card2-img:hover{
+        height: 300px;
+       }
+       .card2-hiding{
+        text-align: center;
+        font-family: Georgia;    
+        font-weight: normal;
+        margin-left: 20px;
+       }
+       .mobile-page-mani{
+        width: 1300px;
+       }
+       .card3-img{
+        height: 230px;
+        margin-left: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+       }
+       .card3-img:hover{
+        height: 250px;
+       }
+       .card-3{
+        height: 390px;
+        width: 270px;
+        border: 2px solid orange;
+        border-radius:15px;
+        margin: 20px;
+       }
+       .card-3-heding{
+        text-align: center;
+        font-family: Georgia;    
+
+       }
+       .card3-icon{
+        margin-left: 100px;
+        margin-bottom: 20px;
+       }   .fouter{
+        height: 300px;
+        width: 1300px;
+        background-color: #232f3e;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+     .card-7{
+            width: 200px;
+            height: 300px;
+            padding: 10px;
+            margin: 10px;
+            margin-top: 10px;
+            margin-left: 20px;
+          
+     }
+       .fouter-img{
+        height: 100px;
+        margin-left:550px;
+        
+       }
+       .fouter-name-1{
+        font-family: Georgia;
+      margin-left: 40px;
+      color: whitesmoke;
+      font-size: 20px;
+       }
+       .fouter-name{
+        font-family: Georgia; 
+        text-align: center;
+        color: white;
+        cursor: pointer;
+       } 
+       .fouter-name:hover{
+       color: #ff9500;
+       }
+       .icon-font{
+        margin: 30px;
+        margin-left: 30px;
+        font-size: 30px;
+       }
+       .icon-font:hover{
+         font-size: 35px;
+         transition: 1.s;
+       }
+       .gmail{
+        text-decoration: none;
+        color: antiquewhite;
+       }
+       .img-h:hover{
+         height: 310px;
+       }
+       @media only screen and (max-width: 600px){
+        .nav-bar-img{
+            background-image: url('./../images/today-deals.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 100px;
+        }
+        .nav-bar-img-2{
+            background-image: url('./../images/today-deals-2.jpg');
+            background-size:cover ;
+            background-position:center ;
+            height: 50px;
+        }
+        .fouter{
+        height: 600px;
+        width: 600px;
+       }
+       .card-of-today-deasle-offer{
+            width: 250px;
+           
+        }
+        
+        .main-nav-bar{
+            background-color: black;
+            position: relative;
+            height: 70px;
+        }
+        .amazon-img{
+            height: 50px;
+            margin-top: 10px;
+        }
+        .search-bar{
+            margin-bottom: 20px;
+            width: 120px;
+          
+           
+        }
+        .title{
+            color: aliceblue;
+            margin-left: 10px;
+            margin: 20px;
+            font-family:system-ui;
+            cursor: pointer;
+        }
+        .nav-bar-titil{
+            margin-left:160px ;
+            position: absolute;
+            top: 6px;
+        }
+        .mobile-page-main-img{
+            height: 80px;
+        }
+        .mobile-page-mani{
+        width: 600px;
+       }
+    }
+       
+    </style>
+</head>
+<body>
+    <div class="main-nav-bar" id="p1">
+        <img src="./../images/amazon-titil.png" class="amazon-img"/>
+       
+        <input type="text" placeholder=" Search Amazon.in" class="search-bar"/>
+      
+         <span class="nav-bar-titil">
+        <a href="./../index.html">  <span class="title"> Home </span></a>
+         <a href="./today-deals.html"> <span class="title"> Todat's Deals</span></a>
+         <a href="./costomer-s.html"> <span class="title"> Costomer Service</span></a>
+         <a href="./electronice.html"> <span class="title"> Electronice</span></a>
+         </span>
+          
+          </div>
+
+          <img src="./../images/mobile-page-card-img.jpg" class="mobile-page-main-img"/>
+        
+          <div class="mobile-page-conter">
+
+            <div>
+                <img src="./../images/mobile-page-card-img1.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img2.jpg" class="mobile-page-card-img"/>
+            </div>
+             
+            <div>
+                <img src="./../images/mobile-page-card-img3.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img4.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img5.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img6.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img7.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img8.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img9.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img10.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img11.jpg" class="mobile-page-card-img"/>
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card-img12.jpg" class="mobile-page-card-img"/>
+            </div>
+          
+
+          </div>
+
+          <h1 class="mobile-page-titile">Bestselling midrange smartphones</h1>
+
+
+          <div class="mobile-page-conter">
+
+
+            <div>
+                <img src="./../images/mobile-page-card2-img1.jpg" class="mobile-page-card2-img"/>
+                <h1 class="card2-hiding">Shop Now</h1>
+            
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card2-img2.jpg" class="mobile-page-card2-img"/>
+                <h1 class="card2-hiding">Shop Now</h1>
+            
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card2-img3.jpg" class="mobile-page-card2-img"/>
+                <h1 class="card2-hiding">Shop Now</h1>
+            
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card2-img4.jpg" class="mobile-page-card2-img"/>
+                <h1 class="card2-hiding">Shop Now</h1>
+            
+            </div>
+
+            <div>
+                <img src="./../images/mobile-page-card2-img5.jpg" class="mobile-page-card2-img"/>
+                <h1 class="card2-hiding">Shop Now</h1>
+            
+            </div>
+
+         </div>
+
+         <img src="./../images/mobile-page-mani-jpg.jpg" class="mobile-page-mani"/>
+         <h1 class="mobile-page-titile">Latest launches in Mobiles 2023</h1>
+
+
+         <div class="mobile-page-conter">
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img1.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    Redmi 12 5G Moonstone Silver 6GB RAM 128GB ROM
+                    3.8 out of 5 stars 5,246
+                    ₹13,499 M.R.P: ₹17,999 (25% off)</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img2.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 128GB Storage)
+                    4.1 out of 5 stars 33,785
+                    ₹19,999 M.R.P: ₹24,783 (19% off)</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img3.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                </p>
+                OnePlus Nord CE 3 Lite 5G (Chromatic Gray, 8GB RAM, 128GB Storage)
+                4.1 out of 5 stars 33,785
+                ₹19,999
+                Brand	OnePlus
+                Model Name	Nord CE 3 Lite 5G</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img4.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    Redmi 12C (Matte Black, 4GB RAM, 64GB Storage) | High Performance
+                    3.9 out of 5 stars 9,801
+                    ₹6,799 M.R.P: ₹13,999 (51% off)</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img5.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    Redmi 12 5G Jade Black 4GB RAM 128GB ROM
+                    3.8 out of 5 stars 5,246
+                    ₹11,999 M.R.P: ₹15,999 (25% off)
+                     Get it by Tomorrow, 16 November</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img6.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    realme narzo N53 (Feather Gold, 4GB+64GB) 33W Segment Fastest 
+                    ₹8,999</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img7.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    iQOO Z7 Pro 5G (Blue Lagoon, 8GB RAM, 256GB Storage) | 3D Curved AMOLED Display |  | 64MP
+                   
+                    ₹24,999 </p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+
+            <div class="card-3">
+                <img src="./../images/mobile-page-card-3-img8.jpg" class="card3-img"/>
+                <p class="card-3-heding">
+                    Redmi 12 5G Moonstone Silver 6GB RAM 128GB ROM
+                    3.8 out of 5 stars 4,879
+                    ₹5,299 M.R.P: ₹9,999 (47% off)</p>
+                    <div class="card3-icon">
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    <i class="fa-solid fa-star icon" style="color: #ff9500;"></i>
+                    </div>
+            </div>
+         </div>
+
+
+         <div class="fouter">
+    
+
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1"> Company</h1>
+        
+        
+                 <p class="fouter-name">
+                    About Us
+                   </p>
+                   <p class="fouter-name">
+                  Our Serivces
+                   </p>
+                   <p class="fouter-name"> 
+                    Privocy Poilcy 
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Amazon Science
+                    
+                   </p>
+                  
+            </div>
+        
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Get Help </h1>
+        
+                 <p class="fouter-name">
+                    FAQ
+                   </p>
+                   <p class="fouter-name">
+                 
+                   </p>
+                   <p class="fouter-name"> 
+                   Shipping
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                   Returne
+                    
+                   </p>
+        
+                   <p class="fouter-name">
+                   
+                    Order Status
+                     
+                    </p>
+                    <p class="fouter-name">
+                   
+                        Payment Options
+                         
+                        </p>
+                  
+            </div>
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Online Shop </h1>
+        
+                 <p class="fouter-name">
+                    Watch
+                   </p>
+                   <p class="fouter-name">
+                 
+                   </p>
+                   <p class="fouter-name"> 
+                    Bag
+                   
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Shoes
+                    
+                   </p>
+                   <p class="fouter-name">
+                   
+                    Dress
+                    
+                   </p>
+                  
+            </div>
+        
+            <div class="card-7">
+        
+                <h1 class="fouter-name-1">Connect Us</h1>
+        
+        
+                <i class="fa-brands fa-instagram icon-font" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-whatsapp icon-font" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook icon-font" style="color: #ffffff;"></i>
+                <i class="fa-regular fa-envelope-open icon-font" style="color: #f0f0f0;"></i>
+                  
+            </div>
+        
+        </div>
+ 
+         <script src="https://kit.fontawesome.com/863b4921f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
